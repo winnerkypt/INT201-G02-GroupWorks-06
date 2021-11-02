@@ -27,19 +27,19 @@ export let product = [{
     productId: 'P005',
     productName: 'DAZY Puff Sleeve Textured Blouse',
     productDesc: 'Casual ,Crop ,Spring/Fall',
-    productPrice: '250 Baht',
+    productPrice: '290 Baht',
     ProductStock: '70 pieces'
 
 }, {
     productId: 'P006',
-    productName: 'Appliques Zipper Detail Cami Top',
-    productDesc: 'Appliques, Zipper',
-    productPrice: '129 Baht',
+    productName: 'DAZY Puff Sleeve Contrast Binding Blouse',
+    productDesc: 'Casual, Crop,Summer',
+    productPrice: '200 Baht',
     productStock: '99 pieces'
 }, {
     productId: 'P007',
-    productName: 'SHEIN Floral Print Scallop Trim Cami Top',
-    productDesc: 'Style: Boho Color: Multicolor',
-    productPrice: '70 Baht',
+    productName: 'DAZY Flap Detail Crop Blouse',
+    productDesc: 'Casual ,Crop ,Summer',
+    productPrice: '209 Baht',
     productStock: '56 pieces'
 }]
