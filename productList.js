@@ -1,26 +1,32 @@
 import { product } from "./product.js";
+const imgSearch = document.querySelector('#search');
 const productsList = document.querySelector('#products');
+
+
 for (let i = 0; i < product.length; i++) {
-    let divProducts = document.createElement("ul");
+
+    let divProducts = document.createElement("div");
     divProducts.setAttribute('id', product[i].productId);
+    divProducts.setAttribute('class', 'col-3')
 
-    let pProductName = document.createElement('li');
-    pProductName.textContent = `Name : ${product[i].productName}`;
+    let imgShein = document.createElement('img');
+    imgShein.src = product[i].productImg;
+    imgShein.width = 250;
+    imgShein.style.marginBottom = '20px';
 
-    let pProductDes = document.createElement('li');
-    pProductDes.textContent = `Desc : ${product[i].productDesc}`;
+    let pProductName = document.createElement('h3');
+    pProductName.innerHTML = `<h3 style="color:#8d4f48;">${product[i].productName}</h3>`;
 
-    let pProductPrice = document.createElement('li');
-    pProductPrice.textContent = `Price ${product[i].productPrice}`;
+    let list = document.createElement('ul');
+    list.setAttribute("class", "list-unstyled");
+    list.innerHTML += `<li style="color:#b47775;">Des : ${product[i].productDesc}</li>`
+    list.innerHTML += `<li style="color:#b47775;">Price ${product[i].productPrice}</li>`
+    list.innerHTML += `<li style="color:#b47775;">Stock : ${product[i].productStock}</li>`
 
-    let pProductStock = document.createElement('li');
-    pProductStock.textContent = `Stock : ${product[i].productStock}`;
-
+    divProducts.appendChild(imgShein);
     divProducts.appendChild(pProductName);
-    divProducts.appendChild(pProductDes);
-    divProducts.appendChild(pProductPrice);
-    divProducts.appendChild(pProductStock);
+    divProducts.appendChild(list);
     productsList.appendChild(divProducts);
 
 }
-console.log(productList);
+
