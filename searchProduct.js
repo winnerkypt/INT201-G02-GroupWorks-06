@@ -5,7 +5,7 @@ document.addEventListener('keyup', () =>{
     let divID = document.getElementById("products");
     let infoOfProduct = divID.getElementsByTagName("div");
     for (let i = 0; i < infoOfProduct.length; i++) {
-      let txtValue = infoOfProduct[i].textContent || infoOfProduct[i].innerText;
+      let txtValue = infoOfProduct[i].textContent
       if (txtValue.toLowerCase().indexOf(filter) > -1) {
         infoOfProduct[i].style.display = "";
       } else {

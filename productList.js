@@ -23,9 +23,13 @@ for (let i = 0; i < product.length; i++) {
     list.innerHTML += `<li style="color:#b47775;">Price ${product[i].productPrice}</li>`
     list.innerHTML += `<li style="color:#b47775;">Stock : ${product[i].productStock}</li>`
 
+    let botton = document.createElement('div');
+    botton.innerHTML += `<button type="button" class="btn btn-outline-danger">Add</button>`
+
     divProducts.appendChild(imgShein);
     divProducts.appendChild(pProductName);
     divProducts.appendChild(list);
+    divProducts.appendChild(botton)
     productsList.appendChild(divProducts);
 
 }
