@@ -24,6 +24,7 @@ for (let i = 0; i < product.length; i++) {
     list.innerHTML += `<li style="color:#b47775;">Stock : ${product[i].productStock}</li>`
 
     let botton = document.createElement('div');
+    botton.setAttribute("class","bottonId");
     botton.innerHTML += `<button type="button" class="btn btn-outline-danger">Add</button>`
 
     divProducts.appendChild(imgShein);
