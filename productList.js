@@ -9,10 +9,10 @@ for (let i = 0; i < product.length; i++) {
     divProducts.setAttribute('id', product[i].productId);
     divProducts.setAttribute('class', 'col-3')
 
-    let imgShein = document.createElement('img');
-    imgShein.src = product[i].productImg;
-    imgShein.width = 250;
-    imgShein.style.marginBottom = '20px';
+    let imgShein = document.createElement('div');
+    imgShein.setAttribute('class', 'gradien');
+    imgShein.innerHTML += `<img src='${product[i].productImg}' width="250px" style="marginBottom:20px;"><div class="overlayText"><p class="textImage">Add</p></div>`;
+
 
     let pProductName = document.createElement('h3');
     pProductName.innerHTML = `<h3 style="color:#8d4f48;">${product[i].productName}</h3>`;
@@ -33,4 +33,3 @@ for (let i = 0; i < product.length; i++) {
     productsList.appendChild(divProducts);
 
 }
-
